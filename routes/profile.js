@@ -7,7 +7,7 @@ require("dotenv").config();
 const JWT = require("jsonwebtoken");
 
 //Get Profile data
-router.get("http://localhost:4000/api/profile", async (req, res) => {
+router.get("https://web.chatvait.com/api/profile", async (req, res) => {
   try {
     //Check if user have token or not
     if (req.cookies.token) {

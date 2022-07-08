@@ -40,7 +40,7 @@ router.get("/count", async (req, res) => {
 });
 
 //Get One
-router.get("http://localhost:4000/api/cart/:_id", async (req, res) => {
+router.get("https://web.chatvait.com/api/cart/:_id", async (req, res) => {
   try {
     const cart = await Cart_Model.findById(req.params.id);
 
@@ -93,7 +93,7 @@ router.get("/", async (req, res) => {
 
 //Create One
 router.post(
-  "http://localhost:4000/api/cart",
+  "https://web.chatvait.com/api/cart",
   validate_token,
   async (req, res) => {
     //Get Token from cookie
@@ -119,7 +119,7 @@ router.post(
 );
 
 //Remove One
-router.delete("http://localhost:4000/api/cart/:id", async (req, res) => {
+router.delete("https://web.chatvait.com/api/cart/:id", async (req, res) => {
   try {
     const cart = await Cart_Model.findByIdAnd;
     Delete(req.params.id);
